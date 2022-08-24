@@ -1,43 +1,80 @@
-*{
-    font-family:"Ubuntu",sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background:#8990ec;
+body {
+  background: #8990ec;
 }
-.wrapper{
-    height: 500px;
-    width: 360px;
-    color: #fff;
-    background: #272639;
-    padding: 20px;
-    margin: 100px auto;
-    border-radius: 15px;
+.wrapper {
+  height: 500px;
+  width: 360px;
+  color: #fff;
+  background: #272639;
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 15px;
 }
-#top{
-    margin-top: 20px;
+#top {
+  margin-top: 20px;
 }
-.container{
-    margin-top: 10px;
+.container {
+  margin-top: 10px;
 }
-.title{
-    font-weight: bold;
-    margin-bottom: 10px;
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-.inputContainer{
-    background: #353959;
-    border-radius: 1.4rem;
-    padding: 0 0.8rem;
-    display: flex;
-    align-items: center;
+.inputContainer {
+  background: #353959;
+  border-radius: 1.4rem;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
 }
-#billBox,#tipBox{
-    font-size: 1.2rem;
-    color:#8990ec ;
-    background: none;
-    border: none;
-    outline: none;
-    padding: none;
+#billBox,
+#tipBox {
+  font-size: 1.2rem;
+  color: #8990ec;
+  background: none;
+  border: none;
+  outline: none;
+  padding: none;
+}
+.buttonContainer {
+  background: #8990ec;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+}
+.splitButtons {
+  background: none;
+  border: none;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* width: 50%; */
+}
+.splitButtons {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+}
+.buttonText {
+  color: #353959;
+}
+#bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.totalContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
 }
