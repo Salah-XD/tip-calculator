@@ -2,6 +2,7 @@ const billdiv = document.getElementById("billBox");
 const tipdiv = document.getElementById("tipBox");
 const noOfPeoplediv = document.getElementById("noOfPeople");
 const totalPerPerson = document.getElementById("perPersonTotal");
+const error = document.getElementById("error");
 
 let noOfPeople = Number(noOfPeoplediv.innerText);
 
@@ -23,7 +24,11 @@ const increasePeople = () => {
 };
 const decereasePeople = () => {
   if (noOfPeople <= 1) {
-    alert("you cannot have less than one person !");
+    error.innerHTML = "You cannot have less than One Person!";
+    setTimeout(() => {
+      error.innerHTML = "";
+    }, 5000);
+    // alert("you cannot have less than one person !");
     return;
   }
   noOfPeople -= 1;

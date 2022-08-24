@@ -82,3 +82,7 @@ body {
 .total {
   font-size: 2rem;
 }
+.error {
+  margin-top: 40px;
+  color: rgb(231, 79, 109);
+}
