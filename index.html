@@ -12,34 +12,34 @@
       <div class="container" id="top">
         <div class="title">Bill Total</div>
         <div class="inputContainer">
-          <span>$</span>
+          <span>$ </span>
           <input
             type="text"
             onkeyup="calculateBill()"
             id="billBox"
-            placeholder="  0.00"
+            placeholder="0.00"
           />
         </div>
       </div>
 
-      <div class="container" id="top">
+      <div class="container">
         <div class="title">Tip</div>
         <div class="inputContainer">
-          <span>%</span>
+          <span>% </span>
           <input
             type="text"
             onkeyup="calculateBill()"
             id="tipBox"
-            placeholder=" 10"
+            placeholder="10"
           />
         </div>
       </div>
 
-      <div class="container" id="bottom">
-        <div class="split container">
+      <div class="bottomcontainer" id="bottom">
+        <div class="splitContainer">
+          <div class="title">People</div>
           <div class="controls">
-            <div class="title">People</div>
-            <span class="buttonContainer">
+            <span class="buttonContainer" id="controls">
               <button onclick="" class="splitButtons">
                 <span class="btnText">+</span>
               </button>
@@ -51,10 +51,10 @@
               </button>
             </span>
           </div>
-          <div class="totalContainer">
-            <div class="title">Total Per Person</div>
-            <div class="total">$0.00</div>
-          </div>
+        </div>
+        <div class="totalContainer">
+          <div class="title">Total Per Person</div>
+          <div class="total">$0.00</div>
         </div>
       </div>
     </div>
